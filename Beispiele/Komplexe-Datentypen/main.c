@@ -23,8 +23,9 @@ void main(void)
         printf(" %d",numbers[i]);
     }
 
-    printf(" Mitarbeiter.Name: %s",Hugo.name);
-    printf(" Mitarbeiter.Alter: %d",Hugo.alter);
-    printf(" Mitarbeiter.Lohn: %f",Hugo.lohn);
+    printf("\n");
+    printf(" Mitarbeiter.Name: %s \n",Hugo.name);
+    printf(" Mitarbeiter.Alter: %d \n",Hugo.alter);
+    printf(" Mitarbeiter.Lohn: %f \n",Hugo.lohn);
 
 }

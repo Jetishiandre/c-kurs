@@ -1,0 +1,54 @@
+#include <stdio.h>
+ 
+int main(void)
+{
+    float zahl1, zahl, sum = 0.0;
+    int count = 0;
+    char input[20];
+ 
+    // Step 1: Read initial number
+    printf("Einlesen Zahl 1: ");
+    if (scanf("%f", &zahl1) != 1) {
+        printf("Invalid input. Please enter a number.\n");
+        return 1;
+    }
+ 
+    sum += zahl1;
+    count++;
+ 
+    while (1) {
+        // Step 2: Read input until 'q' is entered
+        printf("Einlesen der Zahl (or 'q' to quit): ");
+        scanf("%s", input);
+ 
+        if (input[0] == 'q' && input[1] == '\0') {
+            break;
+        }
+ 
+        if (sscanf(input, "%f", &zahl) != 1) {
+            printf("Invalid input. Please enter a number.\n");
+            continue;
+        }
+ 
+        sum += zahl;
+        count++;
+ 
+        // Step 4: Check if the number is 5
+        if (zahl == 5) {
+            printf("Zahl = 5\n");
+            printf("Ausgabe des Mittelwertes: %.2f\n", sum / count);
+            break;
+        }
+    }
+ 
+    // Step 5: Output the average if loop ends
+    if (!(input[0] == 'q' && input[1] == '\0')) {
+        printf("Ausgabe des Mittelwertes: %.2f\n", sum / count);
+    }
+ 
+    return 0;
+}
+hat Kontextmenü
+
+
+hat Kontextmenü

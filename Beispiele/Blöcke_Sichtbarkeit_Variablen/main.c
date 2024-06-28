@@ -11,4 +11,5 @@ void main(void)
         printf("Zahl1: %d Zahl2: %d",zahl1,zahl2);
 
     }
+
 }

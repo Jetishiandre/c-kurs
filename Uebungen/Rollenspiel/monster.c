@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <string.h>
 #include "monster.h"
+
 
 void createMonsterI(Monster *monster,char name[],int health,int attack)
 {

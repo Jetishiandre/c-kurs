@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void sortierePointerNachLaenge(char *arr[], int n) {
+void sortierePointer(char *arr[], int n) {
     char *temp;
     for (int i = 0; i < n-1; i++) {
         for (int j = i+1; j < n; j++) {
@@ -27,7 +27,7 @@ void main() {
     printf("Vor dem Sortieren:\n");
     textausgabe(pointer, anz_Zeilen);
 
-    sortierePointerNachLaenge(pointer, anz_Zeilen);
+    sortierePointer(pointer, anz_Zeilen);
 
     printf("\nNach dem Sortieren:\n");
     textausgabe(pointer, anz_Zeilen);

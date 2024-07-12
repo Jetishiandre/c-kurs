@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void main() {
+    FILE *file;
+    char buffer[256];
+
+    // Datei öffnen
+    file = fopen("beispiel.txt", "r");
+    if (file == NULL) {
+        perror("Fehler beim Öffnen der Datei");
+        return EXIT_FAILURE;
+    }
+
+    // Zeilenweise lesen und ausgeben
+    while (fgets(buffer, sizeof(buffer), file) != NULL) {
+        printf("%s", buffer);
+    }
+
+    // Datei schließen
+    fclose(file);
+
+}

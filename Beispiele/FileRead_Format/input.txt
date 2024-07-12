@@ -1,0 +1,9 @@
+Ganzzahl (dezimal): 20
+Positive Ganzzahl (dezimal): 3000
+Positive Ganzzahl (oktale Darstellung): 5670
+Positive Ganzzahl (hexadezimale Darstellung): bb8
+Zeichen: A
+Zeichenkette: Hallo
+Gleitkommazahl (dezimal): 141.123400
+Gleitkommazahl (exponential): 1.411234e+02
+Gleitkommazahl (allgemeines Format): 141.123

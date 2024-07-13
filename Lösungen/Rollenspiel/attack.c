@@ -19,7 +19,6 @@ void performAttack(Character *attacker, Monster *defender, AttackType attackType
             break;
         case POISON:
             damage = attacker->attack * 1.3;
-            defender->status.poisoned = 1;
             printf("%s greift %s mit einem Giftangriff an!\n", attacker->name, defender->name);
             break;
     }

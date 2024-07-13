@@ -6,8 +6,6 @@ void createCharacter(Character *character) {
     scanf("%s", character->name);
     character->health = 100;
     character->attack = 20;
-    character->status.poisoned = 0;
-    character->status.stunned = 0;
     displayCharacter(character);
 }
 
@@ -16,6 +14,4 @@ void displayCharacter(const Character *character) {
     printf("Name: %s\n", character->name);
     printf("Gesundheit: %d\n", character->health);
     printf("Angriff: %d\n", character->attack);
-    printf("Status: Vergiftet: %d, Betäubt: %d\n",
-           character->status.poisoned, character->status.stunned);
 }

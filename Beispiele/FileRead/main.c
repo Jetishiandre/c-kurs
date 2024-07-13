@@ -9,7 +9,6 @@ void main() {
     file = fopen("beispiel.txt", "r");
     if (file == NULL) {
         perror("Fehler beim Öffnen der Datei");
-        return EXIT_FAILURE;
     }
 
     // Zeilenweise lesen und ausgeben

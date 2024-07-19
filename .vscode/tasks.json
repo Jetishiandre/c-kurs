@@ -1,34 +1,50 @@
 {
     "tasks": [
         {
-            "label": "C/C++: gcc build active file",
             "type": "shell",
-            "command": "/usr/bin/gcc",
+            "label": "build (Windows)",
+            "command": "gcc",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.out"
+                "${workspaceFolder}\\${fileBasenameNoExtension}.exe"
             ],
             "group": "build",
             "problemMatcher": [
                 "$gcc"
             ],
-            "detail": "Generated task by Debugger."
+            "detail": "Build task for Windows"
+        },
+        {
+            "type": "shell",
+            "label": "build (Linux)",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${workspaceFolder}/${fileBasenameNoExtension}"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Build task for Linux"
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file",
-            "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+            "label": "C/C++: gcc-9 build active file",
+            "command": "/usr/bin/gcc-9",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
-                "cwd": "C:\\msys64\\ucrt64\\bin"
+                "cwd": "${fileDirname}"
             },
             "problemMatcher": [
                 "$gcc"

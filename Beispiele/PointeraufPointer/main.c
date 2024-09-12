@@ -34,6 +34,6 @@ void main() {
     sortierePointerAufPointer(pointerArray, anz_Zeilen);
 
     printf("\nNach dem Sortieren:\n");
-    textausgabe(pointerArray, anz_Zeilen);
+    textausgabe(pointerArray, anz_Zeilen);*/
 
 }

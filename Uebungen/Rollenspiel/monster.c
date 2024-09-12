@@ -3,7 +3,7 @@
 #include "monster.h"
 
 
-void createMonsterI(Monster *monster,char name[],int health,int attack)
+void createMonster(Monster *monster,char name[],int health,int attack)
 {
     strcpy(monster->name,name);
     monster->health=health;

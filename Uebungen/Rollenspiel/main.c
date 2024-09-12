@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "character.h"
 #include "monster.h"
 #include "game.h"
@@ -10,7 +11,7 @@ void main()
     Monster monsters[3];
     int numMonster=3;
 
-    printf("Willkommen zum textbasierten Rollenspiel Spieler gegen Monster:");
+    printf("Willkommen zum textbasierten Rollenspiel Spieler gegen Monster:\n");
 
     createCharacter(&player);
 

@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug (Linux)",
+            "name": "Debug C (Linux)",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/${fileBasenameNoExtension}",
@@ -42,7 +42,7 @@
             "preLaunchTask": "build C++ (Linux)"
         },
         {
-            "name": "Debug (Windows)",
+            "name": "Debug C (Windows)",
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${workspaceFolder}\\${fileBasenameNoExtension}.exe",

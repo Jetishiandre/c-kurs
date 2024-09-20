@@ -22,6 +22,7 @@ public:
     virtual void setY(double y) { _y = y; }
 };
 
+
 // Abgeleitete Klasse Rectangle, die AbstractShape implementiert
 class Rectangle : public AbstractShape {
 public:

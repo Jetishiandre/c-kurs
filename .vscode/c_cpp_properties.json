@@ -1,38 +1,21 @@
 {
-    "configurations": [
-      {
-        "name": "Windows",
-        "includePath": [
-          "${workspaceFolder}/**",
-          "C:\\msys64\\ucrt64\\bin",
-          "C:\\msys64\\ucrt64\\include"
-        ],
-        "defines": [
-          "_DEBUG",
-          "UNICODE",
-          "_UNICODE"
-        ],
-        "compilerPath": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
-        "cStandard": "c11",
-        "cppStandard": "c++17",
-        "intelliSenseMode": "gcc-x64"
-      },
-      {
-        "name": "Linux",
-        "includePath": [
-          "${workspaceFolder}/**",
-          "/usr/include",
-          "/usr/local/include"
-        ],
-        "defines": [
-          "_DEBUG"
-        ],
-        "compilerPath": "/usr/bin/gcc",
-        "cStandard": "c11",
-        "cppStandard": "c++17",
-        "intelliSenseMode": "gcc-x64"
+  "name": "C Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.makefile-tools"
+      ],
+      "settings": {
+        "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+        "C_Cpp.default.cStandard": "c11",
+        "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+        "editor.formatOnSave": true
       }
-    ],
-    "version": 4
-  }
-  
+    }
+  },
+
+  "postCreateCommand": "sudo apt update && sudo apt install -y build-essential gdb make"
+}
